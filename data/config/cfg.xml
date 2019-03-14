@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+
+	<frame width="1200" height="720" Margin="16" windowsize="5" PointAdd="70" ACT_Size="5" loseIdx="8">
+	
+		<button w="100" h="40">
+			<start x="870" y="91"/>
+			<userConfig x="1030" y="91"/>
+		</button>
+		
+		<functionButton w="70" h="70">
+			<elimination x="851" y="550"/> 
+			<timestop x="964" y="550"/>
+			<ultimate x="1077" y="550"/>
+		</functionButton>
+	
+		<layer className="J_ui.LayerBackground" x="0" y="0" w="0" h="0"/>
+		<layer className="J_ui.LayerDataBase" x="30" y="55" w="340" h="284"/>
+		<layer className="J_ui.LayerDataDisk" x="30" y="358" w="340" h="284"/>
+		<layer className="J_ui.LayerGame" x="435" y="55" w="330" h="586"/>
+		<layer className="J_ui.LayerButton" x="830" y="55" w="340" h="110"/>
+		<layer className="J_ui.LayerNext" x="830" y="180" w="167" h="128"/>
+		<layer className="J_ui.LayerLevel" x="1003" y="180" w="167" h="128"/>
+		<layer className="J_ui.LayerPoint" x="830" y="323" w="340" h="140"/>
+		<layer className="J_ui.LayerAbout" x="830" y="478" w="340" h="163"/>
+		
+	</frame>	
+	
+	
+	<data MaxRow="5">
+	
+		<dataA className="J_dao.DataBase">
+			<param key="DRIVER" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+			<param key="DB_URL" value="jdbc:sqlserver://120.79.200.120:1433;DatabaseName=GameT"/>
+			<param key="DB_USE" value="Game"/>
+			<param key="DB_PWD" value="123456"/>
+		</dataA>
+	
+		<dataB className="J_dao.DataDisk">
+			<param key="FILE_PATH" value="data/Save/recode.dat"/>
+		</dataB>
+		
+	</data>
+	
+	
+	<system MIN_X="0" MAX_X="9" MIN_Y="0" MAX_Y="17" Level_up="20">
+	
+		<rect round="true">
+			<Point x="4" y="0"/><Point x="3" y="0"/><Point x="5" y="0"/><Point x="6" y="0"/>
+		</rect>
+		<rect round="true">
+			<Point x="4" y="0"/><Point x="3" y="0"/><Point x="5" y="0"/><Point x="4" y="1"/>
+		</rect>
+		<rect round="true">
+			<Point x="4" y="0"/><Point x="3" y="0"/><Point x="5" y="0"/><Point x="3" y="1"/>
+		</rect>
+		<rect round="true">
+			<Point x="4" y="0"/><Point x="3" y="1"/><Point x="4" y="1"/><Point x="5" y="0"/>
+		</rect>
+		<rect round="false">
+			<Point x="4" y="0"/><Point x="4" y="1"/><Point x="5" y="0"/><Point x="5" y="1"/>
+		</rect>
+		<rect round="true">
+			<Point x="4" y="0"/><Point x="3" y="0"/><Point x="5" y="0"/><Point x="5" y="1"/>
+		</rect>
+		<rect round="true">
+			<Point x="4" y="0"/><Point x="3" y="0"/><Point x="4" y="1"/><Point x="5" y="1"/>
+		</rect>
+		
+		<plusPoint rm="1" point="10"/>
+		<plusPoint rm="2" point="30"/>
+		<plusPoint rm="3" point="50"/>
+		<plusPoint rm="4" point="80"/>
+		
+	</system>
+				
+</game>
